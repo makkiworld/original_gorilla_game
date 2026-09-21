@@ -621,21 +621,7 @@ function drawGorillaThoughtBubbles(player) {
     }
   }
 }
-function drawHeart(size) {
-  ctx.beginPath();
-  ctx.moveTo(0, -size * 0.3);
-  ctx.bezierCurveTo(
-    size, -size * 1.3,
-    size * 1.8, size * 0.1,
-    0, size
-  );
-  ctx.bezierCurveTo(
-    -size * 1.8, size * 0.1,
-    -size, -size * 1.3,
-    0, -size * 0.3
-  );
-  ctx.closePath();
-}
+
 function drawBomb() {
   ctx.save();
   ctx.translate(state.bomb.x, state.bomb.y);
